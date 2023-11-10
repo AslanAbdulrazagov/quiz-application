@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz</title>
+  <link rel="stylesheet" href="quizapp.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  
+</head>
+
+<body>
+  <div id="first_page">
+    <div id="first_page_container">
+      <div class="fenn_div">Az/dili</div>
+      <div class="fenn_div">Riyaziyyat</div>
+    </div>
+  </div>
+  <div id="second_page">
+    <div id="second_page_container">
+      <div class="seviyye" id="asan"><span>Asan</span></div>
+      <div class="seviyye" id="orta"><span>Orta</span></div>
+      <div class="seviyye" id="cetin"><span>Cetin</span></div>
+    </div>
+  </div>
+  <div id="seviyye_modal" class="modal">
+    <div id="seviyye_modal_container">
+      <div class="basliq">
+        <span id="say"></span><span id="sual"></span>
+      </div>
+      <div class="cavablar">
+        <div class="cavab" id="a"></div>
+        <div class="cavab" id="b"></div>
+        <div class="cavab" id="c"></div>
+        <div class="cavab" id="d"></div>
+      </div>
+      <div class="click">
+        <i class="fa-solid fa-arrow-left" id="prew"></i>
+        <button class="sehife">1</button>
+        <button class="sehife">2</button>
+        <button class="sehife">3</button>
+        <button class="sehife">4</button>
+        <button class="sehife">5</button>
+        <i class="fa-solid fa-arrow-right" style="margin-left: 20px" id="next"></i>
+
+      </div>
+    </div>
+  </div>
+  <div id="netice">
+    <div id="netice_container">
+      <h2>Netice</h2>
+      <p>Duz cavablarin sayi: <span id="dogru"></span></p>
+      <p>Sehv cavablarin sayi: <span id="yanlis"></span></p>
+      <p>Cavabsiz suall sayi: <span id="cevapsiz"></span></p>
+      <p>Umumi sual sayi: <span id="umumi"></span></p>
+
+    </div>
+  </div>
+  
+</body>
+<script src="quizapp.js"></script>
+</html>
